@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Web Designer and Front-End developer working together . Igor Timohin</title>
+	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/own.css">
+</head>
+<body class="list">
+
+	<header class="caption">
+		<h1>Web Designer: подготовка макета к верстке</h1>
+		<h2>Igor Timohin</h2>
+	</header>
+
+    <!-- Enter -->
+	<section class="slide cover" id="cover"><div>
+		<h2>Web Designer: подготовка макета к верстке</h2>
+        <h3>Или как сделать так, что бы верстальщик не хотел оторвать вам голову</h3>
+        <p>Веб-дизайн — разновидность технического (промышленного) дизайна</p>
+        <br/>
+        <p>Brought to you by <a href="http://igor-timohin.ru">Igor Timohin</a></p>
+		<img src="pictures/webdis-and-frontend.jpg" alt="Web Designer and Front-End developer working together">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+			#cover h2 {
+				text-align: left;
+				font-size:70px;
+                margin-top: 100px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align: left;
+				font-style:italic;
+				font-size:20px;
+				}
+		</style>
+	</div></section>
+
+    <!-- Blockquote -->
+    <section class="slide"><div>
+        <blockquote>
+            <p>Самое веселое, что никто не рисует по правилам потому что их нет. Точнее есть некое сообщество и выстраданный алгоритм действий, ну так чтобы официально где то было написано на каком то сайте… и все на него ссылаются — все правила — это сугубо от компьюнити или личный опыт большой. А в компьюнити попадешь когда чувствуешь в себе неуверенность, а откуда она у
+                <a href="http://www.youtube.com/watch?v=ZfD4nwexp0M" target="_blank">молодых львов</a>?</p>
+        </blockquote>
+        <figcaption><a href="http://habrahabr.ru/post/173271/#comment_6020547" target="_blank">Alexufo on Habrahabr.ru</a></figcaption>
+    </div></section>
+
+    <!-- Why Web-designers should to prepare layout for Front-End developers -->
+	<section class="slide" id="why-prepare"><div>
+		<h2>Зачем специально подготавливать макет?  </h2>
+		<ol>
+			<li class="next">Макет - результат/итог этапа, но не продукт</li>
+			<li class="next">Клиенту нужен продукт</li>
+			<li class="next">Итог этапа разработки дизайна = исходники этапа верстки</li>
+			<li class="next">Макет может дорабатываться другим дизайнером</li>
+			<li class="next">Сокращение времени на понимание</li>
+			<li class="next">Уменьшение ошибок, повышение качества реализации</li>
+			<li class="next">Снижение общей стоимости и длительности проекта</li>
+		</ol>
+        <p class="note">Качественная подготовка макетов - уважение к Заказчику и коллегам</p>
+        <style>
+            #why-prepare  ol{
+                margin-bottom: 30px;
+            }
+        </style>
+	</div></section>
+
+    <!-- Web design is not polygraphy -->
+	<section class="slide"><div>
+        <h2>Web-дизайн - это не полиграфия</h2>
+        <ol>
+            <li class="next">Предоставляйте макет в традиционном формате (.psd)</li>
+            <li class="next">Если разрабатываешь в AI, InDesign, etc - согласуй заранее. Это дополнительные требования к верстальщику, не всегда выполнимые</li>
+            <li class="next">Используй цветовое пространство sRGB, а не CMYK</li>
+            <li class="next">Единицами измерения в макете должны быть допустимые в Web/CSS (px, pt, %, etc). Но никак не см, метры, etc</li>
+            <li class="next">Высоту шрифта (кегль) задавай целыми числами. Результат верстки будет более прогнозируемым.</li>
+        </ol>
+	</div></section>
+
+    <!-- Folder/file structure and naming -->
+    <section class="slide"><div>
+        <h2>Структурируй</h2>
+        <ol>
+            <li class="next">Все файлы в одной папке. Никто не хочет искать макеты по переписке и в разных местах</li>
+            <li class="next">Структура каталогов = структура сайта. Удобнее ориентироваться</li>
+            <li class="next">Название файлов:
+                <ul>
+                    <li class="next">латиницей (contacts.psd)</li>
+                    <li class="next">логичные (i_eshe-one-page.psd врядли удобно)</li>
+                    <li class="next">с учетом версии (index-1.psd, index-2.psd, index-last.psd)</li>
+                    <li class="next">в одном формате (catalog_cars.psd и Office-Team.psd - плохо)</li>
+                </ul>
+            </li>
+        </ol>
+    </div></section>
+
+    <!-- Folder/file structure and naming 2 -->
+    <section class="slide"><div>
+        <h2>Структурируй</h2>
+        <ol>
+            <li class="next">Используй .zip (не .rar, 7zip, gzip или иные)</li>
+            <li class="next">Не оставляй не относящихся к проекту файлов</li>
+            <li class="next">Прикрепляй к проекту несистемные шрифты
+                <ul>
+                    <li>Не забывай про <a href="http://www.paratype.ru/help/license/" target="_blank">лицензионные ограничения</a>, налагаемые на коммерческие шрифты.</li>
+                </ul>
+            </li>
+            <li class="next">Прикрепляй к проекту исходники всех материалов (например, изображений, иконок). Не забывай называть и структурировать их</li>
+            <li class="next">Храни на сервере или в облаке (Dropbox, Google Drive, etc)</li>
+        </ol>
+    </div></section>
+
+    <!-- Layout -->
+    <section class="slide"><div>
+        <h2>Работа с слоями</h2>
+        <ol>
+            <li class="next">Задавай логичные названия</li>
+            <li class="next">Группируй в папки по логическим блокам (header -> logo, phone)</li>
+            <li class="next">Задавай цвета для папок. Визуально упрощает навигацию</li>
+            <li class="next">Не растрируй без крайней необходимости (только для сложных эффектов)</li>
+            <li class="next">Не своди слои, используй Smart-объекты</li>
+            <li class="next">Не использовать режим наложения слоев кроме Normal</li>
+            <li class="next">Не используйте нестандартные сглаживания шрифтов</li>
+        </ol>
+    </div></section>
+
+    <!-- Layout 2 -->
+    <section class="slide"><div>
+        <h2>Работа с слоями</h2>
+        <ol>
+            <li class="next">Используй векторные инструменты</li>
+            <li class="next">Переводи растровые слои в Smart-объекты перед добавлением фильтров</li>
+            <li class="next">Осознанно выбирай пропорции и размеры, делай их кратными</li>
+            <li class="next">Не забывай про экранные разрешения</li>
+            <li class="next">Комментируй («Window» → «Notes»)</li>
+            <li class="next">Удаляй ненужные слои</li>
+            <li class="next">Задавай глобальные элементы</li>
+        </ol>
+    </div></section>
+
+    <!-- UI Kit -->
+    <section class="slide" id="ui-kit"><div>
+        <h2>UI Kit, библиотека элементов</h2>
+        <ol>
+            <li class="next">Используй модульную сетку</li>
+            <li class="next">Покажи все состояния (hover, active, focus, visited)</li>
+            <li class="next">Типографика (h1-h6, параграф, текст, списки, ссылки, таблицы, etc)</li>
+            <li class="next">Добавь состояния под разные экранные разрешения</li>
+            <li class="next">Учитывай переполнение контента</li>
+            <li class="next">Эффекты и поведение - сопроводительная записка, ссылки на примеры (в идеале реализацию)</li>
+        </ol>
+        <p class="note">
+            <a href="http://gridcalculator.dk/" target="_blank">Gridcalculator</a>, 
+            <a href="http://modulargrid.org/#panel" target="_blank">Modular Grid Pattern</a>, 
+            <a href="http://www.yellowdesign.ru/10-besplatnyih-ui-kits-primerov-dlya-vashego-dizayna/" target="_blank">Примеры Ui Kit</a>
+        </p>
+        <style>
+            #ui-kit  ol{
+                margin-bottom: 30px;
+            }
+        </style>
+    </div></section>
+
+    <!-- Responsive -->
+    <section class="slide" id="responsive"><div>
+        <h2>Адаптивность</h2>
+        <ol>
+            <li class="next">Указывай фиксированный, резиновый или адаптивный у тебя макет</li>
+            <li class="next">Сделай макеты под разные экранные разрешения</li>
+            <li class="next">Или укажи в сопроводительной записке/комментариях поведение каждого блока (как изменяется, может исчезает или перестраивается и т.д.)</li>
+            <li class="next">Еще раз учти переполнение</li>
+            <li class="next">Разрешение экрана != размер окна браузера</li>
+        </ol>
+        <p class="note">
+            <a href="http://www.w3schools.com/browsers/browsers_display.asp" target="_blank">Распространенные разрешения экранов</a>
+        </p>
+        <style>
+            #responsive  ol{
+                margin-bottom: 30px;
+            }
+        </style>
+    </div></section>
+
+    <!-- Images -->
+    <section class="slide" id="images"><div>
+        <h2>Изображения</h2>
+        <ol>
+            <li class="next">Отдельно предоставляй исходники</li>
+            <li class="next">Делай изображений по размеру блока, не перекрывай другиим слоями или масками</li>
+            <li class="next">Для иконок - SVG или шрифты, не PNG/JPG</li>
+            <li class="next">Для контентных изображений - JPG</li>
+            <li class="next">Используй Save for Web</li>
+            <li class="next">Называй файлы изображений логично и понятно</li>
+        </ol>
+        <p class="note">
+            <a href="http://fontello.com/" target="_blank">Fontello - генератор иконочных шрифтов</a>
+        </p>
+        <style>
+            #images  ol{
+                margin-bottom: 30px;
+            }
+        </style>
+    </div></section>
+
+    <!-- Note -->
+    <section class="slide"><div>
+        <h2>Сопроводительная записка</h2>
+        <ol>
+            <li class="next">Максимально подробная</li>
+            <li class="next">Фиксированный, резиновый, адаптивный макет ?</li>
+            <li class="next">Структура и взаимосвязь макетов</li>
+            <li class="next">Сценарии и поведение блоков</li>
+            <li class="next">Повторяемые для всего макета параметры (шрифт, размеры, цвета)</li>
+            <li class="next">Ссылки на примеры эффектов</li>
+            <li class="next">Ваши контакты</li>
+        </ol>
+    </div></section>
+
+    <!-- Study -->
+    <section class="slide"><div>
+        <h2>Научись</h2>
+        <ol>
+            <li class="next">Нарезать графику</li>
+            <li class="next">Делать спрайты</li>
+            <li class="next">Верстать</li>
+        </ol>
+    </div></section>
+
+    <!-- Links -->
+    <section class="slide "><div>
+        <h2>Полезные ссылки</h2>
+        <ol>
+            <li><a href="http://i-love-psd.ru/" target="_blank">ilovepsd.ru</a></li>
+            <li><a href="http://photoshopetiquette.com/" target="_blank">photoshopetiquette.com</a></li>
+            <li><a href="http://www.cutandslice.me/" target="_blank">Нарезка графики</a></li>
+            <li><a href="http://wearekiss.com/spritepad">Простое создание спрайта и CSS к нему</a></li>
+            <li><a href="http://epixx.ru/learn/html-css/" target="_blank">Курс по HTML5/CSS3</a></li>
+        </ol>
+    </div></section>
+
+    <!-- Lead the way -->
+    <section class="slide shout"><div>
+        <h2>Давайте жить дружно</h2>
+    </div></section>
+
+    <!-- Contacts -->
+    <section class="slide" id="Contacts"><div>
+        <h2><a href="http://igor-timohin.ru">Igor Timohin</a></h2>
+
+        <h3><a href="mailto:timohin.i@gmail.com">timohin.i@gmail.com</a></h3>
+        <h3><a href="https://vk.com/enkil">https://vk.com/enkil</a></h3>
+        <h3><a href="tel:79213016031">+7-921-301-6031</a></h3>
+
+    </div></section>
+
+
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+</body>
+</html>
